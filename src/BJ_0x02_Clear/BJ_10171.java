@@ -1,4 +1,4 @@
-package BJ_0x02;
+package BJ_0x02_Clear;
 
 public class BJ_10171 {
     public static void main(String[] args) {

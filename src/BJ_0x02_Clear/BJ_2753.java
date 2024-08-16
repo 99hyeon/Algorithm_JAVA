@@ -1,4 +1,4 @@
-package BJ_0x02;
+package BJ_0x02_Clear;
 
 import java.util.Scanner;
 
