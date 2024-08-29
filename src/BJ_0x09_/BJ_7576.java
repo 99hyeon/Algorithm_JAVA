@@ -68,11 +68,6 @@ public class BJ_7576 {
                 }
 
                 queue.add(new int[] {nextX, nextY});
-//                if(board[nextX][nextY] > 1){
-//                    board[nextX][nextY] = Math.min(board[pollX][pollY] + 1, board[nextX][nextY]);
-//                }else{
-//                    board[nextX][nextY] = board[pollX][pollY] + 1;
-//                }
                 board[nextX][nextY] = board[pollX][pollY] + 1;
                 checkDays = Math.max(checkDays, board[nextX][nextY]);
             }
