@@ -1,4 +1,4 @@
-package BJ_0x09_;
+package BJ_0x09_check;
 
 import java.io.BufferedReader;
 import java.io.IOException;
