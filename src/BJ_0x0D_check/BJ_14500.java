@@ -8,6 +8,8 @@ import java.util.StringTokenizer;
 public class BJ_14500 {
 
     static int[][] board;
+
+
     static boolean[][] visit;
     static int N;
     static int M;

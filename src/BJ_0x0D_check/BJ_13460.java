@@ -13,6 +13,9 @@
 //    static int[][] redBoard;
 //    static int[][] blueBoard;
 //
+//    static Queue<int[]> redCoordinate;
+//    static Queue<int[]> blueCoordinate;
+//
 //    static int N;
 //    static int M;
 //
@@ -23,8 +26,8 @@
 //        N = Integer.parseInt(st.nextToken());
 //        M = Integer.parseInt(st.nextToken());
 //        board = new char[N][M];
-//        red = new int[N][M];
-//        blue = new int[N][M];
+//        redBoard = new int[N][M];
+//        blueBoard = new int[N][M];
 //
 //
 //        int redX, redY, blueX, blueY;
@@ -50,8 +53,34 @@
 //        int[] dx = {-1, 1, 0, 0};
 //        int[] dy = {0, 0, -1, 1};
 //
-//        Queue<int[]> redQueue = new LinkedList<>();
-//        redQueue.add(new int[] {redX, redY});
+//        redCoordinate = new LinkedList<>();
+//        redCoordinate.add(new int[] {redX, redY});
+//        while(!redCoordinate.isEmpty()){
+//            int[] poll = redCoordinate.poll();
+//            int currentX = poll[0];
+//            int currentY = poll[1];
+//
+//            for(int i = 0; i < 4; i++){
+//                int nextX = currentX + dx[i];
+//                int nextY = currentY + dy[i];
+//
+//                if(board[nextX][nextY] == '#')
+//                    continue;
+//
+//                if(redBoard[nextX][nextY] > redBoard[currentX][currentY] + 1){
+//
+//                }
+//
+//            }
+//        }
+//    }
+//
+//    static void blueMove(int blueX, int blueY){
+//        int[] dx = {-1, 1, 0, 0};
+//        int[] dy = {0, 0, -1, 1};
+//
+//        blueCoordinate = new LinkedList<>();
+//        blueCoordinate.add(new int[] {blueX, blueY});
 //        while(!redQueue.isEmpty()){
 //            int[] poll = redQueue.poll();
 //            int currentX = poll[0];
@@ -68,14 +97,11 @@
 //
 //
 //            }
-//
-//
 //        }
-//
-//
 //    }
 //
-//    static void moveForward(int currentX, int currentY, int direction){
+//    // direction => {0 1 2 3} = {상 하 좌 우}
+//    static void moveForward(int currentX, int currentY, int direction, boolean checkRed){
 //
 //
 //    }
