@@ -42,7 +42,7 @@ public class BJ_16401 {
                 right = mid-1;
             }
         }
-
+        
         System.out.println(maxLength);
     }
 
