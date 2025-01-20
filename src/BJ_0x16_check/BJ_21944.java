@@ -20,7 +20,6 @@ public class BJ_21944 {
             this.algo = algo;
         }
 
-        @Override
         public int compareTo(Problem o) {
             if(level == o.level){
                 return number - o.number;
@@ -92,7 +91,7 @@ public class BJ_21944 {
                 int L = Integer.parseInt(st.nextToken());
 
                 if (tmp == 1) {
-                    Problem tmpProblem = allProblems.ceiling(new Problem(Integer.MIN_VALUE, L, 0));
+                    Problem tmpProblem = allProblems.ceiling(new Problem(0, L, 0));
                     if (tmpProblem == null) {
                         sb.append(-1).append("\n");
                     } else {
@@ -143,5 +142,5 @@ public class BJ_21944 {
 /**
  * 참고 : https://velog.io/@courage331/%EB%B0%B1%EC%A4%80Java-21944-%EB%AC%B8%EC%A0%9C-%EC%B6%94%EC%B2%9C-%EC%8B%9C%EC%8A%A4%ED%85%9C-Version-2
  *
- * 왜 틀려??
+ * 왜 틀려 => 값을 0으로 바꾸니까 됨
  */
