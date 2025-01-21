@@ -53,3 +53,8 @@ public class BJ_19700 {
         System.out.println(result);
     }
 }
+
+/**
+ * 다시
+ * 다른 방법도 1개 있대
+ */
