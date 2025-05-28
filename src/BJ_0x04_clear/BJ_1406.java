@@ -1,4 +1,4 @@
-package BJ_0x04_check;
+package BJ_0x04_clear;
 
 import java.io.BufferedReader;
 import java.io.IOException;
